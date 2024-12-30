@@ -6,8 +6,6 @@ services:
     pull_policy: always # set to 'always' when using 'latest' image
     ports:
       - "7860:7860"
-    depends_on:
-      - postgres
     volumes:
       - langflow-data:/app/langflow
 
